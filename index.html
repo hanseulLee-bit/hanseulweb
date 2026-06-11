@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>시 - 청춘</title>
+  <title>시 - 청춘 (심화)</title>
   <style>
     @font-face {
         font-family: 'Griun_Cocochoitoon-Rg';
@@ -11,68 +11,106 @@
         font-display: swap;
     }
     
-    body {
+    /* [배경 설정] 페이지 전체 설정 */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;                 
       font-family: "Griun_Cocochoitoon-Rg", sans-serif;
-      padding: 30px;         
-      line-height: 1.8;     
+      overflow: hidden;             
+    }
+
+    .centering-container {
+      display: flex;
+      justify-content: center;       
+      align-items: center;           
+      height: 100vh;                 
+      background-image: url('assets/img/sky.jpg'); 
+      background-size: cover;        
+      background-position: center;   
+      text-align: center;            
+    }
+
+    
+    .poem-box {
+      background-color: rgba(255, 255, 255, 0.6); 
+      padding: 40px 60px;
+      border-radius: 15px;            
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
     }
 
     h1 {
       color: #e76668;
-      margin-bottom: 5px;    
-      display: inline-block; 
+      margin-bottom: 5px;
+      display: inline-block;
     }
 
-   
     .author {
       display: inline-block;
-      margin-left: 20px;     
-      color: #777777;        
-      font-size: 0.85em;     
+      margin-left: 20px;
+      color: #555555;                
+      font-size: 0.85em;
     }
 
     p {
       color: #333333;
-      margin: 0;             
+      margin: 0;
+      line-height: 1.8;
     }
+
+    
+    .end-author {
+        color: #777777;
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+
   </style>
 </head>
 <body>
 
-  <h1>청춘</h1> <span class="author">오은</span>
-  
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
+  <div class="centering-container">
+    <div class="poem-box">
 
-  <p>거센소리로 머물다가</p>
-  <p>&nbsp;</p>
-  <p>된소리로 떠나는 일</p>
-  <p>&nbsp;</p>
-  <p>칼이 꽃이 되는 일</p>
-  <p>&nbsp;</p>
-  <p>피가 뼈가 되는 </p>
-  <p>&nbsp;</p>
-  <p>어떤 날에는 </p>
-  <p>&nbsp;</p>
-  <p>내 손이 마음대로 움직이지 않았다</p>
-  <p>&nbsp;</p>
-  <p>내 손은 내가 아니니까</p>
-  <p>&nbsp;</p>
-  <p>내 마음이 아니니</p>
-  <p>&nbsp;</p>
-  <p>자유는 늘 부자연스러웠다</p>
-  <p>&nbsp;</p>
-  <p>몸의 부기를 빼는 </p>
-  <p>&nbsp;</p>
-  <p>마음을 더는 일</p>
-  <p>&nbsp;</p>
-  <p>다시</p>
-  <p>&nbsp;</p>
-  <p>예사소리로 되돌리는 </p>
-  <p>&nbsp;</p>
-  <p>꿈에 나와 길 위에 섰다</p>
-  <p>&nbsp;</p>
-  <p>아직 꿈길 같았다</p>
+      <h1>청춘</h1> <span class="author">오은</span>
+      
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      <p>거센소리로 머물다가</p>
+      <p>&nbsp;</p>
+      <p>된소리로 떠나는 일</p>
+      <p>&nbsp;</p>
+      <p>칼이 꽃이 되는 일</p>
+      <p>&nbsp;</p>
+      <p>피가 뼈가 되는 </p>
+      <p>&nbsp;</p>
+      <p>어떤 날에는 </p>
+      <p>&nbsp;</p>
+      <p>내 손이 마음대로 움직이지 않았다</p>
+      <p>&nbsp;</p>
+      <p>내 손은 내가 아니니까</p>
+      <p>&nbsp;</p>
+      <p>내 마음이 아니니</p>
+      <p>&nbsp;</p>
+      <p>자유는 늘 부자연스러웠다</p>
+      <p>&nbsp;</p>
+      <p>몸의 부기를 빼는 </p>
+      <p>&nbsp;</p>
+      <p>마음을 더는 일</p>
+      <p>&nbsp;</p>
+      <p>다시</p>
+      <p>&nbsp;</p>
+      <p>예사소리로 되돌리는 </p>
+      <p>&nbsp;</p>
+      <p>꿈에 나와 길 위에 섰다</p>
+      <p>&nbsp;</p>
+      <p>아직 꿈길 같았다</p>
+
+      <p class="end-author">-오은-</p>
+
+    </div>
+  </div>
 
 </body>
 </html>
